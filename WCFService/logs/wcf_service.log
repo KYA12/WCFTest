@@ -1,0 +1,22 @@
+2020-02-27 14:59:09,633 [13] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-02-27 14:59:09,938 [13] INFO  WCFService.Service Save_Cheques    - Enter Save_Cheques()
+
+2020-02-27 14:59:10,451 [13] ERROR WCFService.Service Save_Cheques    - System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Cheques__B7C293969A13031B'. Cannot insert duplicate key in object 'dbo.Cheques'. The duplicate key value is (f9c626aa-289b-4582-bea0-7cb0d3080dae).
+The statement has been terminated.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) в C:\projects\dapper\Dapper\SqlMapper.cs:строка 2797
+   в Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) в C:\projects\dapper\Dapper\SqlMapper.cs:строка 568
+   в Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) в C:\projects\dapper\Dapper\SqlMapper.cs:строка 441
+   в WCFService.Service.Save_Cheques(Cheque cheque) в D:\Testapp\WCFService\Service.svc.cs:строка 53
+ClientConnectionId:ca9caaf1-03d0-46bf-9bee-3882157ff3a4
+Error Number: 2627, State: 1, Class: 14
+
