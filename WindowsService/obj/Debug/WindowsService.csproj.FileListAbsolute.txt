@@ -54,7 +54,6 @@ D:\Testapp\WindowsService\bin\Debug\log4net.xml
 D:\Testapp\WindowsService\bin\Debug\Newtonsoft.Json.xml
 D:\Testapp\WindowsService\bin\Debug\Dapper.xml
 D:\Testapp\WindowsService\obj\Debug\WindowsService.csprojAssemblyReference.cache
-D:\Testapp\WindowsService\obj\Debug\WindowsService.NewService.resources
 D:\Testapp\WindowsService\obj\Debug\WindowsService.ProjectInstaller.resources
 D:\Testapp\WindowsService\obj\Debug\WindowsService.csproj.GenerateResource.cache
 D:\Testapp\WindowsService\obj\Debug\WindowsService.exe.manifest
@@ -62,3 +61,5 @@ D:\Testapp\WindowsService\obj\Debug\WindowsService.application
 D:\Testapp\WindowsService\obj\Debug\WindowsService.csproj.CopyComplete
 D:\Testapp\WindowsService\obj\Debug\WindowsService.exe
 D:\Testapp\WindowsService\obj\Debug\WindowsService.pdb
+D:\Testapp\WindowsService\obj\Debug\WindowsService.WatcherService.resources
+D:\Testapp\WindowsService\obj\Debug\WindowsService.csproj.CoreCompileInputs.cache

@@ -36,3 +36,4 @@ D:\Testapp\WCFService\obj\Debug\WCFService.csprojAssemblyReference.cache
 D:\Testapp\WCFService\obj\Debug\WCFService.csproj.CopyComplete
 D:\Testapp\WCFService\obj\Debug\WCFService.dll
 D:\Testapp\WCFService\obj\Debug\WCFService.pdb
+D:\TestApp\WCFService\obj\Debug\WCFService.csproj.CoreCompileInputs.cache

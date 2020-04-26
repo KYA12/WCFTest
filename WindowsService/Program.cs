@@ -11,7 +11,7 @@ namespace WindowsService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new NewService()
+                new WatcherService()
             };
             ServiceBase.Run(ServicesToRun);
         }

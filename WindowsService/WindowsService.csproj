@@ -83,7 +83,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\FakeServiceReference\Reference.cs">
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -93,11 +93,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="NewService.cs">
+    <Compile Include="WatcherService.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="NewService.Designer.cs">
-      <DependentUpon>NewService.cs</DependentUpon>
+    <Compile Include="WatcherService.Designer.cs">
+      <DependentUpon>WatcherService.cs</DependentUpon>
     </Compile>
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
@@ -112,17 +112,17 @@
     <None Include="App.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Connected Services\FakeServiceReference\FakeService.wsdl" />
-    <None Include="Connected Services\FakeServiceReference\FakeService.xsd">
+    <None Include="Connected Services\ServiceReference1\FakeService.wsdl" />
+    <None Include="Connected Services\ServiceReference1\FakeService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\FakeServiceReference\FakeService1.xsd">
+    <None Include="Connected Services\ServiceReference1\FakeService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\FakeServiceReference\FakeService2.xsd">
+    <None Include="Connected Services\ServiceReference1\FakeService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\FakeServiceReference\FakeService3.xsd">
+    <None Include="Connected Services\ServiceReference1\FakeService3.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiceReference\Service.wsdl" />
@@ -145,8 +145,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="NewService.resx">
-      <DependentUpon>NewService.cs</DependentUpon>
+    <EmbeddedResource Include="WatcherService.resx">
+      <DependentUpon>WatcherService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectInstaller.resx">
       <DependentUpon>ProjectInstaller.cs</DependentUpon>
@@ -159,23 +159,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\FakeServiceReference\" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReference\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\FakeServiceReference\FakeService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\FakeServiceReference\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\FakeServiceReference\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\FakeServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceReference\Service.disco" />
@@ -193,16 +190,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
+    <None Include="Connected Services\ServiceReference1\FakeService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="665f2ccf-1507-40d0-9169-36cbf31a1e5f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56272/FakeService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FakeService.disco" MetadataType="Disco" ID="c977161c-6182-4b62-ab9a-cd7a62dcb34a" SourceId="1" SourceUrl="http://localhost:56272/FakeService.svc?disco" />
+    <MetadataFile FileName="FakeService.xsd" MetadataType="Schema" ID="5d8de64c-0736-4844-8d5f-ccee94cde4ec" SourceId="1" SourceUrl="http://localhost:56272/FakeService.svc?xsd=xsd1" />
+    <MetadataFile FileName="FakeService.wsdl" MetadataType="Wsdl" ID="5f462eb3-8c1a-4d2e-bc3b-af4a7c4783e7" SourceId="1" SourceUrl="http://localhost:56272/FakeService.svc?wsdl" />
+    <MetadataFile FileName="FakeService1.xsd" MetadataType="Schema" ID="31c8847c-29a0-4572-bf37-ddedd19be89c" SourceId="1" SourceUrl="http://localhost:56272/FakeService.svc?xsd=xsd2" />
+    <MetadataFile FileName="FakeService2.xsd" MetadataType="Schema" ID="a1c0b0f5-588d-445e-9f20-4880e43aa440" SourceId="1" SourceUrl="http://localhost:56272/FakeService.svc?xsd=xsd3" />
+    <MetadataFile FileName="FakeService3.xsd" MetadataType="Schema" ID="4511c3df-bb34-4f32-9963-ba104e977a92" SourceId="1" SourceUrl="http://localhost:56272/FakeService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

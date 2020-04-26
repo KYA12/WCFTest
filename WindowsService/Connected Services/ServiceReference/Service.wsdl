@@ -8,32 +8,32 @@
       <xsd:import schemaLocation="http://localhost:56272/Service.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IService_Save_Cheques_InputMessage">
-    <wsdl:part name="parameters" element="tns:Save_Cheques" />
+  <wsdl:message name="IService_SaveCheques_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCheques" />
   </wsdl:message>
-  <wsdl:message name="IService_Save_Cheques_OutputMessage">
-    <wsdl:part name="parameters" element="tns:Save_ChequesResponse" />
+  <wsdl:message name="IService_SaveCheques_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveChequesResponse" />
   </wsdl:message>
-  <wsdl:message name="IService_Get_Cheques_Pack_InputMessage">
-    <wsdl:part name="parameters" element="tns:Get_Cheques_Pack" />
+  <wsdl:message name="IService_GetChequesPack_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChequesPack" />
   </wsdl:message>
-  <wsdl:message name="IService_Get_Cheques_Pack_OutputMessage">
-    <wsdl:part name="parameters" element="tns:Get_Cheques_PackResponse" />
+  <wsdl:message name="IService_GetChequesPack_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChequesPackResponse" />
   </wsdl:message>
   <wsdl:portType name="IService">
-    <wsdl:operation name="Save_Cheques">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService/Save_Cheques" message="tns:IService_Save_Cheques_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService/Save_ChequesResponse" message="tns:IService_Save_Cheques_OutputMessage" />
+    <wsdl:operation name="SaveCheques">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SaveCheques" message="tns:IService_SaveCheques_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SaveChequesResponse" message="tns:IService_SaveCheques_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="Get_Cheques_Pack">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_Cheques_Pack" message="tns:IService_Get_Cheques_Pack_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_Cheques_PackResponse" message="tns:IService_Get_Cheques_Pack_OutputMessage" />
+    <wsdl:operation name="GetChequesPack">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetChequesPack" message="tns:IService_GetChequesPack_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetChequesPackResponse" message="tns:IService_GetChequesPack_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="Save_Cheques">
-      <soap:operation soapAction="http://tempuri.org/IService/Save_Cheques" style="document" />
+    <wsdl:operation name="SaveCheques">
+      <soap:operation soapAction="http://tempuri.org/IService/SaveCheques" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -41,8 +41,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="Get_Cheques_Pack">
-      <soap:operation soapAction="http://tempuri.org/IService/Get_Cheques_Pack" style="document" />
+    <wsdl:operation name="GetChequesPack">
+      <soap:operation soapAction="http://tempuri.org/IService/GetChequesPack" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

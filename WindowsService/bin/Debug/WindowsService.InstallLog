@@ -1,0 +1,26 @@
+﻿Выполняется установка сборки 'd:\TestApp\WindowsService\bin\Debug\WindowsService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = d:\TestApp\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = d:\TestApp\WindowsService\bin\Debug\WindowsService.exe
+Устанавливается служба NewService...
+Служба NewService успешно установлена.
+Создается исходный EventLog NewService в журнале Application...
+Выполняется фиксация сборки 'd:\TestApp\WindowsService\bin\Debug\WindowsService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = d:\TestApp\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = d:\TestApp\WindowsService\bin\Debug\WindowsService.exe
+Выполняется установка сборки 'd:\TestApp\WindowsService\bin\Debug\WindowsService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = d:\TestApp\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = d:\TestApp\WindowsService\bin\Debug\WindowsService.exe
+Устанавливается служба NewService...
+Создается исходный EventLog NewService в журнале Application...
+Выполняется откат для сборки 'd:\TestApp\WindowsService\bin\Debug\WindowsService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = d:\TestApp\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = d:\TestApp\WindowsService\bin\Debug\WindowsService.exe
+Восстанавливается исходное состояние журнала событий для источника NewService.

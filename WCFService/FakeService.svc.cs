@@ -16,13 +16,13 @@ namespace WCFService
 			//Get logger
 			log = LogManager.GetLogger(typeof(FakeService));
 		}
-		public bool Save_Cheques(Cheque cheque)
+		public bool SaveCheques(Cheque cheque)
 		{
 			try
 			{
-				log.Info("Enter Save_Cheques()");
+				log.Info("Enter SaveCheques()");
 				string path = AppDomain.CurrentDomain.BaseDirectory;
-				string directory = path + "\\App_Data";
+				string directory = path + "\\AppData";
 				string fileName = ConfigurationManager.AppSettings["FileName"];
 				string name = Path.Combine(directory, fileName);
 				if (!Directory.Exists(directory))
@@ -33,7 +33,7 @@ namespace WCFService
 					JsonSerializer serializer = new JsonSerializer();
 					serializer.Serialize(writer, cheque);
 				}
-				log.Info("Exit Save_Cheque()");
+				log.Info("Exit SaveCheque()");
 				return true;
 			}
 			catch (Exception ex)
@@ -42,11 +42,11 @@ namespace WCFService
 				return false;
 			}
 		}
-		public ICollection<Cheque> Get_Cheques_Pack(int amount)
+		public ICollection<Cheque> GetChequesPack(int amount)
 		{
 			try
 			{
-				log.InfoFormat("Enter Get_Cheques_Pack(), value: {0}", amount);
+				log.InfoFormat("Enter ChequesPack(), value: {0}", amount);
 				ICollection<Cheque> chequesList = new List<Cheque>(amount);
 				for (int i = 0; i < amount; i++)
 				{
@@ -60,7 +60,7 @@ namespace WCFService
 					};
 					chequesList.Add(cheque);
 				}
-				log.Info("Exit Get_Cheques_Pack()");
+				log.Info("Exit GetChequesPack()");
 				return chequesList;
 			}
 			catch (Exception ex)

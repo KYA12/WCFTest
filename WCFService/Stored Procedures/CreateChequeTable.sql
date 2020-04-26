@@ -8,14 +8,14 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[Cheques](
-	[cheque_id] [uniqueidentifier] NOT NULL,
-	[cheque_number] [nvarchar](50) NOT NULL,
-	[summ] [money] NOT NULL,
-	[discount] [money] NULL,
-	[articles] [nvarchar](max) NULL,
+	[ChequeId] [uniqueidentifier] NOT NULL,
+	[Number] [nvarchar](50) NOT NULL,
+	[Summ] [money] NOT NULL,
+	[Discount] [money] NULL,
+	[Articles] [nvarchar](max) NULL,
 PRIMARY KEY CLUSTERED 
 (
-	[cheque_id] ASC
+	[ChequeId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO

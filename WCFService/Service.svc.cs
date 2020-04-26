@@ -25,13 +25,13 @@ namespace WCFService
 		}
 
 		/* Save_Cheques() saves cheque's object to the database*/
-		public bool Save_Cheques(Cheque cheque)
+		public bool SaveCheques(Cheque cheque)
 		{
 			try
 			{	
 				using (IDbConnection con = new SqlConnection(connection))
 				{
-					log.Info("Enter Save_Cheques()");
+					log.Info("Enter SaveCheques()");
 					// Check if connection is opened or closed, and open it
 					if (con.State == ConnectionState.Closed)
 						con.Open();
@@ -44,11 +44,11 @@ namespace WCFService
 					else sqlParameter = null;
 					// Create value with parameters of the cheque's object for sql query
 					DynamicParameters parameters = new DynamicParameters();
-					parameters.Add("@cheque_id", cheque.Id);
-					parameters.Add("@cheque_number", cheque.Number);
-					parameters.Add("@summ", cheque.Summ);
-					parameters.Add("@discount", cheque.Discount);
-					parameters.Add("@articles", sqlParameter);
+					parameters.Add("@ChequeId", cheque.Id);
+					parameters.Add("@Number", cheque.Number);
+					parameters.Add("@Summ", cheque.Summ);
+					parameters.Add("@Discount", cheque.Discount);
+					parameters.Add("@Articles", sqlParameter);
 					// Execute stored procedure with Dapper
 					if (con.Execute("SaveCheque", parameters, commandType: CommandType.StoredProcedure) > 0)
 						return true;
@@ -63,11 +63,11 @@ namespace WCFService
 		}
 
 		/* Get_Cheques_Pack(int) returns collection of the last added cheques*/
-		public ICollection<Cheque> Get_Cheques_Pack(int amount)
+		public ICollection<Cheque> GetChequesPack(int amount)
 		{
 			try
 			{
-				log.InfoFormat("Enter Get_Cheques_Pack(), value = {0}", amount);
+				log.InfoFormat("Enter GetChequesPack(), value = {0}", amount);
 				ICollection<Cheque> chequesList = new List<Cheque>();
 				DynamicParameters parameters = new DynamicParameters();
 
@@ -88,7 +88,7 @@ namespace WCFService
 								Discount = d,
 								Articles = e?.Split(';')
 							}, parameters, splitOn: "*", commandType: CommandType.StoredProcedure).ToList();
-					log.Info("Exit Get_Cheques_Pack()");
+					log.Info("Exit GetChequesPack()");
 					return chequesList;
 				}
 			}

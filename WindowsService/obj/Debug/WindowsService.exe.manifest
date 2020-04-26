@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>v9vUreplKzkABih5EFHuZHtGd/1FslBGMLLkQdbzXDE=</dsig:DigestValue>
+        <dsig:DigestValue>gfc5pD7+ZLH1DtiMYfsK8sXadO5M/tb+gFswTWMkF+8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,17 +97,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4XMJu0358UAKGBhoD4gDpPKRDGDusXsfIs+TgMa34i8=</dsig:DigestValue>
+        <dsig:DigestValue>EmEpLP3EY56Bu7258ti/r9IbPYgsu8hn4A22SfcUzmE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="WindowsService.exe.config" size="2592">
+  <file name="WindowsService.exe.config" size="2579">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7tIgyeZVxZ6A9AKnzVY4ylve3tUYyuNFSYoNoaVaTPI=</dsig:DigestValue>
+      <dsig:DigestValue>txW6zZG2xr8lB2HAkOHWIt42pUrBuMNURJRzaYCl7xk=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

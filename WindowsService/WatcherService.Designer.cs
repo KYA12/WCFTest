@@ -1,6 +1,6 @@
 ﻿namespace WindowsService
 {
-    partial class NewService
+    partial class WatcherService
     {
         /// <summary> 
         /// Обязательная переменная конструктора.

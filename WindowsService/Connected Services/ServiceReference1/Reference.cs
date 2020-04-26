@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsService.ServiceReference {
+namespace WindowsService.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService")]
     public interface IService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SaveCheques", ReplyAction="http://tempuri.org/IService/SaveChequesResponse")]
@@ -29,12 +29,12 @@ namespace WindowsService.ServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceChannel : WindowsService.ServiceReference.IService, System.ServiceModel.IClientChannel {
+    public interface IServiceChannel : WindowsService.ServiceReference1.IService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceClient : System.ServiceModel.ClientBase<WindowsService.ServiceReference.IService>, WindowsService.ServiceReference.IService {
+    public partial class ServiceClient : System.ServiceModel.ClientBase<WindowsService.ServiceReference1.IService>, WindowsService.ServiceReference1.IService {
         
         public ServiceClient() {
         }

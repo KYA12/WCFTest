@@ -11,7 +11,7 @@ using System.Threading;
 
 namespace WindowsService
 {
-    public partial class NewService : ServiceBase
+    public partial class WatcherService : ServiceBase
     {
         /* Absolute path */
         //private static readonly string watchPathAbsolute = ConfigurationManager.AppSettings["WatchPathAbsolute"];
@@ -24,10 +24,10 @@ namespace WindowsService
         private static readonly string completePathRelative = ConfigurationManager.AppSettings["CompletePathRelative"];
         private static ILog log;
 
-        public NewService()
+        public WatcherService()
         {
             InitializeComponent();
-            log = LogManager.GetLogger(typeof(NewService)); // Initialization of Log4Net
+            log = LogManager.GetLogger(typeof(WatcherService)); // Initialization of Log4Net
         }
 
         /* Check if file locked or unlocked */
@@ -87,10 +87,10 @@ namespace WindowsService
                 ServiceReference.ServiceClient reference = new ServiceReference.ServiceClient();
 
                 // Check if file locked or unlocked for access
-                //while (WaitForFile(new FileInfo(e.FullPath)))
-                //{
-                //    Thread.Sleep(500);
-                //}
+                while (WaitForFile(new FileInfo(e.FullPath)))
+                {
+                    Thread.Sleep(500);
+                }
 
                 string json;
                 using (var read = File.Open(e.FullPath, FileMode.Open, FileAccess.Read, FileShare.Read))
@@ -124,8 +124,8 @@ namespace WindowsService
                 //File.Copy(e.FullPath, path, true);
 
                 // Logging information about the result of calling Save_Cheques() from WCFService
-                log.Info("Method Save_Cheques() from WCFService called");
-                if (reference.Save_Cheques(cheque))
+                log.Info("Method SaveCheques() from WCFService called");
+                if (reference.SaveCheques(cheque))
                     log.Info("Cheque has been saved to database");
                 else
                     log.Info("Cheque hasn't been saved to database");   

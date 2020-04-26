@@ -12,10 +12,10 @@ namespace WCFService
 	public interface IService
 	{
 		[OperationContract]
-		bool Save_Cheques(Cheque cheque);
+		bool SaveCheques(Cheque cheque);
 
 		[OperationContract]
-		ICollection<Cheque> Get_Cheques_Pack(int pack_size);
+		ICollection<Cheque> GetChequesPack(int size);
 	}
 
 	[DataContract]

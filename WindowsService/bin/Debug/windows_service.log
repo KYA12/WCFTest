@@ -1,0 +1,117 @@
+2020-04-26 12:58:32,895 [6] INFO  WindowsService.WatcherService FileSystemWatcher_Created - Method Save_Cheques() from WCFService called
+
+2020-04-26 12:58:33,331 [6] ERROR WindowsService.WatcherService FileSystemWatcher_Created - System.ServiceModel.ActionNotSupportedException: Сообщение с Action "http://tempuri.org/IService/Save_Cheques" не может быть обработано на стороне получателя из-за несоответствия ContractFilter на EndpointDispatcher. Возможно, это связано с несоответствием контрактов (несогласованность действий на стороне отправителя и получателя) или несоответствием привязка/защита на стороне отправителя и получателя.  Убедитесь, что отправитель и получатель имеют один и тот же контракт и одинаковые привязки (включая требования к защите, например, Message, Transport или None).
+
+Server stack trace: 
+   в System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   в System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   в System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   в System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   в System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   в System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   в System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   в WindowsService.ServiceReference.IService.Save_Cheques(Cheque cheque)
+   в WindowsService.ServiceReference.ServiceClient.Save_Cheques(Cheque cheque) в D:\Testapp\WindowsService\Connected Services\ServiceReference\Reference.cs:строка 59
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 128
+
+2020-04-26 13:11:52,143 [7] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 13:20:42,926 [3] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 13:21:24,029 [6] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 13:22:56,122 [4] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 13:22:59,172 [5] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 13:23:01,779 [5] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 13:23:04,312 [7] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 13:23:13,762 [5] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 13:23:20,638 [5] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 14:01:26,469 [6] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+
+2020-04-26 14:01:47,171 [6] ERROR WindowsService.WatcherService FileSystemWatcher_Created - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: }. Path '', line 1, position 104.
+   в Newtonsoft.Json.JsonTextReader.Read()
+   в Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   в Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   в Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   в WindowsService.WatcherService.FileSystemWatcher_Created(Object sender, FileSystemEventArgs e) в D:\Testapp\WindowsService\WatcherService.cs:строка 106
+

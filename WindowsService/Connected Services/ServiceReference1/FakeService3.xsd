@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:56272/FakeService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFService" />
-  <xs:element name="Save_Cheques">
+  <xs:element name="SaveCheques">
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCFService" minOccurs="0" name="cheque" nillable="true" type="q1:Cheque" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Save_ChequesResponse">
+  <xs:element name="SaveChequesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="Save_ChequesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="SaveChequesResult" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Get_Cheques_Pack">
+  <xs:element name="GetChequesPack">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="pack_size" type="xs:int" />
+        <xs:element minOccurs="0" name="size" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Get_Cheques_PackResponse">
+  <xs:element name="GetChequesPackResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCFService" minOccurs="0" name="Get_Cheques_PackResult" nillable="true" type="q2:ArrayOfCheque" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCFService" minOccurs="0" name="GetChequesPackResult" nillable="true" type="q2:ArrayOfCheque" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

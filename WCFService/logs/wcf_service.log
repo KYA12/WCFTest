@@ -1,9 +1,32 @@
-2020-02-27 14:59:09,633 [13] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+2020-04-26 12:55:23,190 [33] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
 
-2020-02-27 14:59:09,938 [13] INFO  WCFService.Service Save_Cheques    - Enter Save_Cheques()
+2020-04-26 12:55:23,699 [33] INFO  WCFService.FakeService GetChequesPack  - Enter ChequesPack(), value: 0
 
-2020-02-27 14:59:10,451 [13] ERROR WCFService.Service Save_Cheques    - System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Cheques__B7C293969A13031B'. Cannot insert duplicate key in object 'dbo.Cheques'. The duplicate key value is (f9c626aa-289b-4582-bea0-7cb0d3080dae).
-The statement has been terminated.
+2020-04-26 12:55:23,720 [33] INFO  WCFService.FakeService GetChequesPack  - Exit GetChequesPack()
+
+2020-04-26 12:55:32,577 [33] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-04-26 12:55:32,578 [33] INFO  WCFService.FakeService GetChequesPack  - Enter ChequesPack(), value: 5
+
+2020-04-26 12:55:32,580 [33] INFO  WCFService.FakeService GetChequesPack  - Exit GetChequesPack()
+
+2020-04-26 12:56:25,186 [33] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-04-26 12:56:25,224 [33] INFO  WCFService.FakeService SaveCheques     - Enter SaveCheques()
+
+2020-04-26 12:56:25,751 [33] INFO  WCFService.FakeService SaveCheques     - Exit SaveCheque()
+
+2020-04-26 13:00:16,906 [33] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-04-26 13:00:16,970 [33] INFO  WCFService.Service GetChequesPack  - Enter GetChequesPack(), value = 2
+
+2020-04-26 13:00:17,596 [33] INFO  WCFService.Service GetChequesPack  - Exit GetChequesPack()
+
+2020-04-26 13:00:38,571 [33] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-04-26 13:00:38,586 [33] INFO  WCFService.Service SaveCheques     - Enter SaveCheques()
+
+2020-04-26 13:00:38,699 [33] ERROR WCFService.Service SaveCheques     - System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'SaveCheque' expects parameter '@ChequeId', which was not supplied.
    в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
@@ -16,7 +39,35 @@ The statement has been terminated.
    в Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) в C:\projects\dapper\Dapper\SqlMapper.cs:строка 2797
    в Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) в C:\projects\dapper\Dapper\SqlMapper.cs:строка 568
    в Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) в C:\projects\dapper\Dapper\SqlMapper.cs:строка 441
-   в WCFService.Service.Save_Cheques(Cheque cheque) в D:\Testapp\WCFService\Service.svc.cs:строка 53
-ClientConnectionId:ca9caaf1-03d0-46bf-9bee-3882157ff3a4
-Error Number: 2627, State: 1, Class: 14
+   в WCFService.Service.SaveCheques(Cheque cheque) в D:\Testapp\WCFService\Service.svc.cs:строка 53
+ClientConnectionId:0b5fde6b-6b64-4a46-b953-c65308f42e22
+Error Number: 201, State: 4, Class: 16
+
+2020-04-26 13:09:34,649 [26] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-04-26 13:09:34,749 [26] INFO  WCFService.FakeService SaveCheques     - Enter SaveCheques()
+
+2020-04-26 13:09:35,085 [26] INFO  WCFService.FakeService SaveCheques     - Exit SaveCheque()
+
+2020-04-26 13:09:43,022 [26] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-04-26 13:09:43,028 [26] INFO  WCFService.FakeService GetChequesPack  - Enter ChequesPack(), value: 1
+
+2020-04-26 13:09:43,035 [26] INFO  WCFService.FakeService GetChequesPack  - Exit GetChequesPack()
+
+2020-04-26 13:10:32,917 [26] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-04-26 13:10:32,940 [26] INFO  WCFService.Service SaveCheques     - Enter SaveCheques()
+
+2020-04-26 13:10:39,020 [26] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-04-26 13:10:39,024 [26] INFO  WCFService.Service GetChequesPack  - Enter GetChequesPack(), value = 1
+
+2020-04-26 13:10:39,076 [26] INFO  WCFService.Service GetChequesPack  - Exit GetChequesPack()
+
+2020-04-26 13:20:17,907 [30] DEBUG WCFService.ServiceBase .ctor           - ServiceBase Constructor Call
+
+2020-04-26 13:20:17,909 [30] INFO  WCFService.FakeService SaveCheques     - Enter SaveCheques()
+
+2020-04-26 13:20:17,955 [30] INFO  WCFService.FakeService SaveCheques     - Exit SaveCheque()
 

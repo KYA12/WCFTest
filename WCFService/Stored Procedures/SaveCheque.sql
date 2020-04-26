@@ -1,11 +1,11 @@
 USE TestDatabase;
 GO
 CREATE PROCEDURE [dbo].[SaveCheque]
-	@cheque_id uniqueidentifier,
-	@cheque_number nvarchar(50),
-	@summ money,
-	@discount money,
-	@articles nvarchar(MAX)
+	@ChequeId uniqueidentifier,
+	@Number nvarchar(50),
+	@Summ money,
+	@Discount money,
+	@Articles nvarchar(MAX)
 AS
-INSERT INTO Cheques(cheque_id, cheque_number, summ, discount, articles) VALUES(@cheque_id, @cheque_number, @summ, @discount, @articles)
+INSERT INTO Cheques(ChequeId, Number, Summ, Discount, Articles) VALUES(@ChequeId, @Number, @Summ, @Discount, @Articles)
 GO
